@@ -1,4 +1,4 @@
-,user_id,"round(sum(price), 2)",Frequency,Recent_Date
+,user_id,Monetary,Frequency,Recent_Date
 0,562288986,39.61,8,2020-01-01
 1,488417434,78.84,20,2020-02-17
 2,515285785,20.99,5,2020-01-02

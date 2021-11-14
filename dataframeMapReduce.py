@@ -35,7 +35,7 @@ total = dffinal.withColumn('dt', func(col('event_time')))
 print("Group by user_id where total ")
 finaldf = total.groupBy("user_id").agg(round(sum("price"),2),count("user_id"),max_("dt"))
 
-final = finaldf.withColumnRenamed('round(sum("price"),2)',"Monetary")\
+final = finaldf.withColumnRenamed("round(sum(price), 2)","Monetary")\
         .withColumnRenamed("count(user_id)","Frequency")\
         .withColumnRenamed("max(dt)","Recent_Date")
 
